@@ -1,0 +1,58 @@
+.login-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #ebecee 0%, #cdd5e0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.login-card {
+  width: 360px;
+  padding: 32px 28px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Title */
+.login-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* Button */
+.login-btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Inputs spacing */
+.ant-form-item {
+  margin-bottom: 18px;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    width: 300px;
+    padding: 24px 18px;
+  }
+}

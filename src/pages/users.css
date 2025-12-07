@@ -1,0 +1,50 @@
+.users-page {
+  padding: 24px;
+}
+
+/* cards grid */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* responsive cards */
+.card-grid .ant-card {
+  transition: all 0.3s ease;
+}
+
+.card-grid .ant-card:hover {
+  transform: translateY(-4px);
+}
+
+/* table spacing */
+.ant-table {
+  background: #fff;
+  border-radius: 6px;
+}
+
+/* search + top controls */
+.users-page .ant-input-search {
+  width: 260px;
+}
+
+/* header */
+.users-page h2 {
+  margin-bottom: 0;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .users-page {
+    padding: 16px;
+  }
+
+  .users-page .ant-input-search {
+    width: 180px;
+  }
+
+  .card-grid {
+    justify-content: center;
+  }
+}

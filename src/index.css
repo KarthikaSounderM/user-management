@@ -1,0 +1,38 @@
+:root {
+  --bg: #eef0f2;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #222;
+}
+
+/* Login styles */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-card {
+  width: 420px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Users page */
+.users-page {
+  padding: 24px 32px;
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* small responsive tweaks */
+@media (max-width: 600px) {
+  .login-card { width: 92%; }
+  .card-grid { justify-content: center; }
+}
